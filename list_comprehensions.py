@@ -3,10 +3,14 @@ def build_coord(x, y, z, n):
 
     def filter_coord(coord):
         nonlocal n
-        return not sum(coords) == n
+        return not sum(coord) == n
 
     coords = list(filter(filter_coord, coords))
     print(coords)
 
 if __name__ == '__main__':
+    x = 1
+    y = 1
+    z = 2
+    n = 3
     build_coord(x, y, z, n)
